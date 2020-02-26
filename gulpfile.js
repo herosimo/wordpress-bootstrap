@@ -1,5 +1,5 @@
 // Your localhost server name
-let hostName = "localhost/2020/wp-20";
+let hostName = "elementor.test";
 
 // Gulp
 const gulp = require("gulp");
@@ -54,7 +54,7 @@ function js() {
             .pipe(concat("all.min.js"))
 
             // Minify HS
-            .pipe(uglify())
+            // .pipe(uglify())
             .pipe(gulp.dest("./dist/js"))
 
             // Trigger BrowserSync
